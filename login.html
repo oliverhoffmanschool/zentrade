@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ZenTrade</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="colors.css">
+</head>
+<body class="min-h-screen bg-gradient-to-b from-blue-50 to-white flex flex-col">
+    <header class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flnex items-center">
+            <a href="website.html">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZEN%20(1)-SLX1h1haWRXdhytk6PfEtYwEIuoQhD.png" alt="ZenTrade Logo" width="40" height="40">
+            </a>
+        </div>
+        <nav>
+            <ul class="flex items-center space-x-6">
+                <li><a href="website.html" class="text-blue-700 hover:text-blue-900">Home</a></li>
+                <li><a href="signup.html" class="text-blue-700 hover:text-blue-900">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+            <h1 class="text-3xl font-bold mb-6 text-center text-blue-900">Login to ZenTrade</h1>
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-blue-700">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-blue-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-blue-700">Password</label>
+                    <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 border border-blue-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-blue-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-blue-700">Remember me</label>
+                    </div>
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Forgot your password?</a>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Sign in
+                    </button>
+                </div>
+            </form>
+            <div class="mt-6 text-center">
+                <p class="text-sm text-blue-700">
+                    Don't have an account? 
+                    <a href="signup.html" class="font-medium text-blue-600 hover:text-blue-500">Sign up</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-blue-300">&copy; 2024 ZenTrade. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+    <script src="fadein.js"></script>
+</body>
+</html>

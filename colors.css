@@ -1,0 +1,8 @@
+:root {
+    --button-color: #2563eb;
+    
+    }
+    body {
+        opacity: 0;
+        transition: opacity 0.5s ease-in; /* 1 second fade-in effect */
+    }
